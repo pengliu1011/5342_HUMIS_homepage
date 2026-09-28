@@ -9,6 +9,12 @@ body {
         margin: 0 auto;
         background-color: white;
 
+        header{
+            img{
+                display: block;
+            }
+        }
+
         section.middle {
             min-height: 500px;
             padding: 10px;
