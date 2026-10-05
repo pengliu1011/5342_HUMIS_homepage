@@ -50,6 +50,14 @@ body {
                     }
                 }
 
+                &.dorp-down-menu {
+                    margin-top: 10px;
+
+                    select{
+                        width: 100%;
+                    }
+                }
+
                 &.bottom {
                     text-transform: lowercase;
                     font-size: 10px;
@@ -60,12 +68,17 @@ body {
         div.green-box {
             min-height: 500px;
             background-color: #C8CAAF;
-            padding: 20px 30px;
+            padding: 10px;
             margin: 10px 0 80px 0;
             border-radius: 10px;
 
-            aside {
+            main {
+                background-color: white;
+                padding: 10px;
 
+                img {
+                    width: 100%;
+                }
             }
         }
 
@@ -84,7 +97,21 @@ body {
 
             section.middle {
                 > nav {
-                    text-align: right;
+                    text-align: right; /* override the mobile layout */
+
+                    &.dorp-down-menu {
+                        display: none;
+                    }
+                }
+
+                div.green-box {
+                    padding: 20px 30px;
+
+                    aside{
+                        &.left-side {
+                            display: block;
+                        }
+                    }
                 }
             }
         }
