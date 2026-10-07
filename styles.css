@@ -95,7 +95,7 @@ body {
         }
 
         /* Tablet and up overrides */
-        @media screen and (width > 500px) {
+        @media screen and (width >= 600px) {
             /* breakpoint */
             border: 10px solid black;
 

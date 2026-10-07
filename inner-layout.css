@@ -1,0 +1,42 @@
+/* Mobile first */
+
+body{
+    background-color: #282726;
+    display: flex;
+    justify-content: center;
+
+    section.container {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: space-between;
+        max-width: 780px;
+
+        header {
+            img {
+                width: 100%;
+                flex-direction: column;
+            }
+        }
+
+        section.middle {
+            display: flex;
+            flex-direction: column;
+
+            nav.dorp-down-menu {
+                display: none;
+            }
+        }
+
+
+        /* Tablet and up overrides */
+        @media screen and (width >= 600px) {
+            section.middle {
+                nav.dorp-down-menu {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
