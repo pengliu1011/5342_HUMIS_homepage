@@ -21,44 +21,60 @@ body {
         }
 
         section.middle {
-            display: flex;
-            flex-direction: column;
-            border: 10px solid red;
             height: 100%;
-            justify-content: space-between;
 
-            nav.dorp-down-menu {
-                /* display: none;*/
+            div.left-side {
+                display: none;
             }
 
-            nav.minor {
-                a {
-                    color: black;
-                    border-right: 1px solid black;
-                    padding-right: 5px;
-                    margin-right: 5px;
-                    text-decoration: none;
+            section.inner {
+                display: flex;
+                flex-direction: column;
+                border: 10px solid red;
+                height: 100%;
+                justify-content: space-between;
 
-                    &:hover {
-                        text-decoration: underline;
-                    }
+                nav.dorp-down-menu {
+                    /* display: none;*/
+                }
 
-                    img {
-                        vertical-align: middle;
-                    }
+                nav.minor {
+                    a {
+                        color: black;
+                        border-right: 1px solid black;
+                        padding-right: 5px;
+                        margin-right: 5px;
+                        text-decoration: none;
 
-                    &:last-of-type {
-                        border-right: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+
+                        img {
+                            vertical-align: middle;
+                        }
+
+                        &:last-of-type {
+                            border-right: none;
+                        }
                     }
                 }
             }
+        }
 
 
-            /* Tablet and up overrides */
-            @media screen and (width >= 600px) {
-                section.middle {
+        /* Tablet and up overrides */
+        @media screen and (width >= 600px) {
+            section.middle {
+                display: flex;
+
+                div.left.side {
+                    display: flex;
+                }
+
+                section.inner {
                     nav.dorp-down-menu {
-                        display: none;
+                        display: flex;
                     }
                 }
             }
