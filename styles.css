@@ -5,8 +5,7 @@
 }
 body {
     background-color: #292827;
-    font-family: Avenir Next, sans-serif;
-    letter-spacing: 0.05em;
+    font-family: Arial, Helvetica, sans-serif;
 
     div.container {
         min-width: 390px;
