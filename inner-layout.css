@@ -3,6 +3,7 @@
     --black: #000;
     --green-light: #B4B697;
     --grey-light: #F2F1F0;
+    --burgundy: #A12D37;
 }
 
 /* Mobile first */
@@ -17,13 +18,13 @@ body {
         background-color: white;
         display: flex;
         flex-direction: column;
-        min-height: 70vh;
         justify-content: space-between;
         max-width: 780px;
 
         header {
             img {
                 width: 100%;
+                display: block;
             }
         }
 
@@ -83,11 +84,16 @@ body {
                         &:last-of-type {
                             border-right: none;
                         }
+
+                        &.active {
+                            text-decoration: underline;
+                        }
                     }
 
                     &.top{
                         text-transform: uppercase;
                         margin-top: 5px;
+                        order: -2;
                     }
 
                     &.bottom{
@@ -123,6 +129,7 @@ body {
                     width: 30%;
                     background-color: var(--grey-light);
                     border-right: 2px solid var(--green-light);
+                    padding-bottom: 20px;
 
                     nav.left-nav {
                         margin: 20px 10px 0;
@@ -140,6 +147,11 @@ body {
                                 background-color: var(--engDeptGreen);
                                 color: #fff;
                             }
+
+                            &.active {
+                                font-weight: bold;
+                                font-size: 12px;
+                            }
                         }
                     }
 
@@ -147,6 +159,7 @@ body {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
+                        gap: 10px;
                     }
                 }
 
@@ -159,6 +172,10 @@ body {
 
                     nav.minor {
                         justify-content: flex-end;
+                    }
+
+                    main {
+                        min-height: 500px;
                     }
                 }
             }
