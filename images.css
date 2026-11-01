@@ -16,4 +16,19 @@ main {
             margin-right: 1rem;
         }
     }
+
+    &.news {
+        .calendar-link {
+            img {
+                width: 24px;
+                vertical-align: middle;
+            }
+        }
+
+        .pull {
+            img {
+                width: 75px;
+            }
+        }
+    }
 }

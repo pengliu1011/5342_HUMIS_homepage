@@ -100,10 +100,124 @@ body {
                         text-transform: lowercase;
                         margin-bottom: 5px;
                     }
+
+                    &.contact {
+                        justify-content: flex-start;
+                        text-transform: uppercase;
+                        border-bottom: 2px solid var(--black);
+                        padding-bottom: 5px;
+                        margin-bottom: 15px;
+
+                        a {
+                            color: var(--burgundy);
+                            border-right-color: var(--burgundy);
+                        }
+                    }
                 }
 
                 main {
                     padding: 30px;
+
+                    &.courses {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        div.course-nav {
+                            h2 {
+                                margin-bottom: 5px;
+                            }
+
+                            nav {
+                                a {
+                                    display: block;
+                                    color: var(--black);
+                                    font-size: 11px;
+                                    text-decoration: none;
+                                    padding-bottom: 8px;
+
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
+
+                                    &.active {
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+
+                        div.course-content {
+                            h3 {
+                                text-transform: none;
+                            }
+
+                            h5 {
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+
+                    &.news {
+                        div.course-nav {
+                            h2 {
+                                font-size: 1.125rem;
+                            }
+                        }
+
+                        div.course-content {
+                            h3 {
+                                font-size: 0.875rem;
+                                text-transform: uppercase;
+                                margin-bottom: 20px;
+                            }
+
+                            h5.event-title {
+                                margin-bottom: 0;
+                            }
+
+                            a {
+                                color: var(--burgundy);
+                                text-decoration: none;
+                                font-weight: bold;
+
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+
+                    &.friends {
+                        div.course-nav {
+                            h2 {
+                                font-size: 1.125rem;
+                            }
+
+                            nav {
+                                a {
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+
+                        div.course-content {
+                            h3 {
+                                text-transform: uppercase;
+                                margin-bottom: 5px;
+                            }
+
+                            a {
+                                color: var(--burgundy);
+                                font-size: 11px;
+                                text-decoration: none;
+
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -176,6 +290,40 @@ body {
 
                     main {
                         min-height: 500px;
+
+                        &.courses {
+                            flex-direction: row;
+                            justify-content: space-between;
+
+                            div.course-nav {
+                                width: 30%;
+                                border-right: 1px dotted var(--black);
+                            }
+
+                            div.course-content {
+                                width: 65%;
+                            }
+                        }
+
+                        &.news {
+                            div.course-nav {
+                                width: 36%;
+                            }
+
+                            div.course-content {
+                                width: 59%;
+                            }
+                        }
+
+                        &.friends {
+                            div.course-nav {
+                                width: 40%;
+                            }
+
+                            div.course-content {
+                                width: 55%;
+                            }
+                        }
                     }
                 }
             }
